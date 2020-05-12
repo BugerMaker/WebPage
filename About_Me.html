@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢迎来到，罗健的个人主页</title>
+	<link rel="stylesheet" type="text/css" href="./css/style02.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+</style>
+<body>
+	<div class="wrapper">
+
+		<div class="banner">
+			<div class="music">
+					
+					<i class="fa fa-chevron-right" aria-hidden="true" id="love-right" style="display: none;"></i>
+					<i class="fa fa-chevron-left" aria-hidden="true" id="love-left"></i>
+
+				</div>
+				<audio id="music" src="./backsong.mp3" id="aud" controls="true" class="audio" loop="loop" autoplay="autoplay"><source src="backsong.mp3"/></audio>
+			<h1>你好，欢迎访问我的主页</h1>
+			<!-- <hr> -->
+		</div>
+		<div class="container">
+			<div class="mainTab">
+				<div class="main_Menu">
+				<li class="menu"><a href="Habbits.html">个人爱好</a></li>
+				<li class="menu"><a href="./Achievements.html">个人成绩</a></li>
+				<li class="menu"><a href="./Collections.html">个人收藏</a></li>
+				</div>
+				<div id="Me">
+					<h1>个人介绍</h1>
+					<p>
+						ABOUT ME
+					</p>
+					<hr>
+					<P class="message">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个快要奔三的人了，但还跟个孩子一样，做什么都不行，想做很多事，但又不知道自己到底想干什么，没有主见，心里有几个喜欢但不追的女孩，觉得这世上所有的女孩都值得好好保护。喜欢发呆，偶尔抬头看看天空，黯然神伤。总觉得自己来到人间一趟，不能就这样回去，也想看看太阳，和我的心上人，一起走在街上。喜欢听歌，遇到喜欢的歌也会哼两句，五音不全，唱首歌要脱层皮。虚假的篮球迷，喜欢打篮球时那种挥汗如雨的畅快之感，不看球赛不练技术，至今仍然是个菜鸡。朋友说多不多，说少也不少，能交心的也就那几个，对朋友挺好，渴望阳光，也想把温暖带给身边的人。不喜欢主动，所以有时候错过了很多东西，也引起很多身边人的不满，但，我想做自己，我想按照自己的意愿生活，也许这很自私天真。佩服有才的人，也希望自己也能成为那样闪闪发光的人。喜欢看动漫，追的就那几部，用一颗热血的心，始终热爱生活。说话做事没有逻辑可言，随性而行，这大概就是我吧。</P>
+					<br>
+					<p class="video">
+						<video width="430px" height="220px" controls="true"><source src="./wuyan.mp4" type="video/mp4"></video>
+							<p>我想让你知道的</p>
+					</p>
+				</div>
+			</div>
+			<div class="logo_r">
+				
+				<div class="logo_img">
+					<div class="logo_content front"><img src="./img/鬼灭之刃.jpg"></div>
+					<div class="logo_content back"><h1>虽然痛苦，满地打滚也要前进</h1></div></div>
+				<div class="logo_img">
+					<div class="logo_content front"><img src="./img/进击的巨人.png"></div>
+					<div class="logo_content back"><h1>也许我没有什么天赋，唯有斗志，我绝不会输给任何人。</h1></div></div>
+				<div class="logo_img">
+					<div class="logo_content front"><img src="./img/刺客伍六七.jpg"></div>
+					<div class="logo_content back"><h1>不拼尽全力去试一下，又怎么会知道啊</h1></div></div>
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+<script type="text/javascript">
+	// document.getElementById("Me").style.opacity = 1;
+
+	var v1 = document.getElementById("love-right");
+	var v2 = document.getElementById("love-left");
+	v1.onclick = function(){
+		this.style.display = "none";
+		v2.style.display = "block";
+		var v = document.getElementById("music");
+		v.style.display = "block";
+	}
+	v2.onclick = function(){
+		this.style.display = "none";
+		v1.style.display = "block";
+		var v = document.getElementById("music");
+		v.style.display = "none";
+	}
+</script>
+</html>
