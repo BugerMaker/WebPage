@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人成绩</title>
+	<link rel="stylesheet" type="text/css" href="./css/style03.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1>404</h1>
+			<p class="banner">THERE ARE NO COOKIES<br>
+				<span>SORRY THE PAGE NOT FOUND</span>
+			</p>
+			<div class="btn" onclick="goto();">GO BACK HOME</div>
+		 </div>
+
+	<div class="darkback" id="darkback"> 
+		 <div class="tanchuang" id="tanchuang">
+		 	<span>由于您的成绩过于优秀<br>故不在当前页面显示<br>╮(╯﹏╰）╭</span>
+		 	<div class="btn" id="btn1">行了行了，知道了</div>
+		 </div>
+	</div>
+	</div>	
+</body>
+<script type="text/javascript">
+	function goto(){
+		window.open('About_Me.html');
+	}
+
+	var v = document.getElementById("darkback");
+	var v1 = document.getElementById("btn1");
+	v1.onclick = function(){
+		v.style.display = "none";
+	}
+	
+	
+</script>
+</html>
