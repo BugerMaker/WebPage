@@ -1,0 +1,84 @@
+@charset "utf-8"
+
+*{
+	margin:0;
+	padding:0;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,
+ blockquote,p{padding:0;margin:0;} 
+body{
+	margin:0;
+	padding:0;
+}
+.warpper{
+	width: 100%;
+	height:700px;
+
+}
+.banner{
+	position: fixed;
+	width: 300px;
+	height:700px;
+	top: 0;
+	bottom: 0;
+	left: 0;	
+	display: block;	
+	text-align: center;
+	background: #343D46	;
+	/*background-image: linear-gradient(to bottom, #7A88FF, lightblue, #7AFFAF);*/
+	background-image: linear-gradient(to bottom, #343D46	, #9DDBFB, #0E2750);
+}
+.banner h1{
+	color: white;
+	position: absolute;
+	top:40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+@keyframes bgcolor{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 100%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+@keyframes bgcolor01{
+	from{
+		background-position: 0% 50%;
+	}
+	to{
+		background-position: 50% 100%;
+	}
+	
+}
+.mainTab{
+	width: 77.8%;
+	height:700px;
+	background:url(../img/background02.jpg);
+	position: absolute;
+	top: 0;
+	left: 300px;
+	background-size: 100% 100%;
+	background-position: top left;
+	background-repeat: no-repeat;
+	/*background-image: linear-gradient(45deg , #7A88FF, #7AFFAF,pink);*/
+	background-size: 150%;
+	-webkit-animation: bgcolor01 5s forwards;
+	-o-animation: bgcolor01 5s forwards;
+	animation: bgcolor01 5s forwards;
+}
+.mainTab h1{
+	font-family: "楷体";
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	/*color: white;*/
+}
+.message_01{
+	padding-left: 20px;
+	color: #343D46	;
+}

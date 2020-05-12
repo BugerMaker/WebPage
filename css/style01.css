@@ -1,0 +1,178 @@
+@charset "utf-8"
+
+*{
+	margin:0;
+	padding:0;
+}
+html {overflow-y:scroll;margin: 0;} 
+
+body{
+	
+	margin: 0;
+	border:0;
+}
+table{
+	width: 300px;
+	border:1px solid white;
+	text-align: center;
+	color: white;
+}
+.wrapper{
+	margin-top: 0;
+	height:700px;
+	position: relative;	
+	/*background: url("http://img.xjh.me/random_img.php?type=bg&ctype=nature&return=302");*/
+	background: url(../img/background005.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position:center;
+	
+}
+.container{
+	
+	width: 800px;
+	height: 450px;
+	margin:0 auto;
+	position: relative;
+	top: 15px;
+	
+	animation:first 1s linear forwards;
+	
+}
+.container::before{
+	content: "";
+	width: 800px;
+	height: 450px;
+	position:absolute;
+	opacity: 0.7;
+	background:linear-gradient(135deg,#fff,black,lightblue,black,#fff);
+	background-size: 300%;
+	-webkit-animation: bgcolor 15s infinite;
+	-o-animation: bgcolor 15s infinite;
+	animation: bgcolor 15s infinite;
+}
+@keyframes bgcolor{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+@keyframes first{
+	from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.img-container{
+	margin:0 auto;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	border-radius: 50%;
+	background-color: white;
+}
+.img-container img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+
+}
+.slider{
+	position: relative;
+	text-align: center;
+	width: 800px;
+	height:100px;
+}
+.tag{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	color: white;
+	font-size: 15px;
+	margin-right: 27px;
+	margin-left: 27px;
+	text-align: center;
+	padding-top: 30px;
+	box-sizing:border-box;
+	border-radius: 50%;
+	background-color: rgb(0,0,0,0.5);	
+	animation: myTag 2s linear infinite;
+}
+
+#myself{
+	margin:0 auto;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 250px;
+	position: relative;
+}
+.btn{
+	color: white;
+	background-color: green;
+	width:100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin:8px auto;
+	cursor: pointer;
+}
+@keyframes myTag{
+	0%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(-10px);
+	}
+}
+
+.top01{
+	font-size: 25px;
+	font-family: "宋体";
+	box-sizing: border-box;
+	width: 16px;
+	float: left;
+	padding-left: 30px;
+}
+.top02{
+	font-size: 25px;
+	font-family: "宋体";
+	box-sizing: border-box;
+	width: 16px;
+	float: right;
+
+	padding-right: 30px;
+}
+
+.message{
+	width: 100%;
+	position: absolute;
+	color: white;
+}
+
+.message_l{
+	margin: 15px 65px;
+	
+}
+.message_r{
+	margin:90px 95px;
+}

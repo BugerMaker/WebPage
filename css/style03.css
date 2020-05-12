@@ -1,0 +1,86 @@
+@charset "utf-8"
+
+*{
+	padding:0;
+	margin:0;
+}
+div,body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,
+ blockquote,p{padding:0;margin:0;} 
+
+.wrapper{
+	width: 100%;
+	height:700px;
+	background: url("../img/freedom01.jpg") no-repeat;
+	background-size: 100% 100%;
+	background-position: top left;
+	/*background: black;*/
+	text-align: center;
+
+}
+.container{
+	width: 600px;
+	height: 600px;
+	margin:0 auto;
+	z-index: 100;
+}
+.container h1{
+	font-size: 200px;
+	font-weight: bold;
+	color: #343D46;
+}
+.banner{
+	font-size: 3em;
+	font-weight: bold;
+	color: lightblue;
+
+}
+.banner span{
+	font-weight: bold;
+	font-size: 30px;
+	color: #ddd;
+}
+.btn{
+	width: 200px;
+	height: 56px;
+	color: white;
+	margin: 0 auto;
+	background: lightgreen;
+	border-radius: 5px;
+	line-height: 56px;
+	text-align: center;
+	cursor: pointer;			
+}
+.darkback{
+	width: 100%;
+	height:700px;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	background: black;
+	position: absolute;
+	z-index: 101;
+	
+}
+.tanchuang{
+	font-size: 28px;
+	border: 1px solid silver;
+	width: 400px;
+	height: 200px;
+	background: rgb(0,0,0,0.5);
+	border-radius: 5px;
+	color: white;
+	position:absolute;
+	top: 30%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	margin: auto;
+}
+.tanchuang span{
+	font-family: "宋体";
+	font-size: 30px;
+}
+.tanchuang .btn{
+	font-size: 25px;
+	position: relative;
+	margin:20px auto;
+}
